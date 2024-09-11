@@ -6,18 +6,7 @@ namespace CardGames
 {
     public class SnapGame
     {
-        private static void HandleUserInput(Snap myGame)
-		{
-			//Fetch the next batch of UI interaction
-			SwinGame.ProcessEvents();
-
-			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
-			{
-				myGame.FlipNextCard ();
-			}
-		}
-		
-		public static void LoadResources()
+        public static void LoadResources()
         {
             Bitmap cards;
             cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
